@@ -1,0 +1,7 @@
+/*!
+ * \defgroup block GNU Radio RFFE_CTL C++ Signal Processing Blocks
+ * \brief All C++ blocks that can be used from the RFFE_CTL GNU Radio
+ *        module are listed here or in the subcategories below.
+ *
+ */
+
