@@ -31,4 +31,7 @@ except ImportError:
 	pass
 
 # import any pure python here
+from tx_sequence_msg import tx_sequence_msg
+
+
 #

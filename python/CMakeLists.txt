@@ -32,7 +32,7 @@ endif()
 GR_PYTHON_INSTALL(
     FILES
     __init__.py
-    DESTINATION ${GR_PYTHON_DIR}/rffe_ctl
+    tx_sequence_msg.py DESTINATION ${GR_PYTHON_DIR}/rffe_ctl
 )
 
 ########################################################################
