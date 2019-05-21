@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<block>
+  <name>Simple PTT</name>
+  <key>rffe_ctl_simple_ptt</key>
+  <category>[rffe_ctl]</category>
+  <import>import rffe_ctl</import>
+  <make>rffe_ctl.simple_ptt(delay=$delay, samp_rate=$samp_rate)</make>
+  <callback>set_delay($delay)</callback>
+  <callback>set_samp_rate($samp_rate)</callback>
+  <param>
+    <name>Delay [ms]</name>
+    <key>delay</key>
+    <value>1000</value>
+    <type>float</type>
+  </param>
+  <param>
+    <name>Sample Rate</name>
+    <key>samp_rate</key>
+    <value>samp_rate</value>
+    <type>float</type>
+  </param>
+
+  <sink>
+    <name>trigger</name>
+    <type>message</type>
+    <optional>1</optional>
+  </sink>
+  <sink>
+    <name>in</name>
+    <type>complex</type>
+  </sink>
+
+  <source>
+    <name>ptt_out</name>
+    <type>message</type>
+    <optional>1</optional>
+  </source>
+  <source>
+    <name>out</name>
+    <type>complex</type>
+  </source>
+</block>

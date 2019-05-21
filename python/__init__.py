@@ -31,7 +31,9 @@ except ImportError:
 	pass
 
 # import any pure python here
-from tx_sequence_msg import tx_sequence_msg
+from simple_ptt import simple_ptt
+
+
 
 
 #

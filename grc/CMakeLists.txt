@@ -18,5 +18,6 @@
 # the Free Software Foundation, Inc., 51 Franklin Street,
 # Boston, MA 02110-1301, USA.
 install(FILES
-    rffe_ctl_tx_sequence_msg.xml DESTINATION share/gnuradio/grc/blocks
+    rffe_ctl_simple_ptt.xml
+    DESTINATION share/gnuradio/grc/blocks
 )
