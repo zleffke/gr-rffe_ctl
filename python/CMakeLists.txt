@@ -33,7 +33,7 @@ GR_PYTHON_INSTALL(
     FILES
     __init__.py
     simple_ptt.py
-    DESTINATION ${GR_PYTHON_DIR}/rffe_ctl
+    time_tag_to_pdu.py DESTINATION ${GR_PYTHON_DIR}/rffe_ctl
 )
 
 ########################################################################

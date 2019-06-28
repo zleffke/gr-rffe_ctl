@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<block>
+  <name>Time Tag to PDU</name>
+  <key>rffe_ctl_time_tag_to_pdu</key>
+  <category>[rffe_ctl]</category>
+  <import>import rffe_ctl</import>
+  <make>rffe_ctl.time_tag_to_pdu($tag_name)</make>
+  <param>
+    <name>Tag Name</name>
+    <key>tag_name</key>
+    <value>"tx_time"</value>
+    <type>string</type>
+  </param>
+  <sink>
+    <name>in</name>
+    <type>complex</type>
+  </sink>
+  <source>
+    <name>pdu</name>
+    <type>message</type>
+    <optional>1</optional>
+  </source>
+</block>

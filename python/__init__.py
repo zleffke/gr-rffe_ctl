@@ -33,6 +33,8 @@ except ImportError:
 # import any pure python here
 from simple_ptt import simple_ptt
 
+from time_tag_to_pdu import time_tag_to_pdu
+
 
 
 
