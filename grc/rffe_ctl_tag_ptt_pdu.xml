@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<block>
+  <name>UHD Tags to PTT PDU</name>
+  <key>rffe_ctl_tag_ptt_pdu</key>
+  <category>[rffe_ctl]</category>
+  <import>import rffe_ctl</import>
+  <make>rffe_ctl.tag_ptt_pdu($samp_rate,$sob_key,$eob_key,$tx_time_key,$ptt_mode)</make>
+  <param>
+    <name>Sample Rate</name>
+    <key>samp_rate</key>
+    <value>samp_rate</value>
+    <type>float</type>
+  </param>
+  <param>
+    <name>SOB key</name>
+    <key>sob_key</key>
+    <value>"sob"</value>
+    <type>string</type>
+  </param>
+  <param>
+    <name>EOB key</name>
+    <key>eob_key</key>
+    <value>"eob"</value>
+    <type>string</type>
+  </param>
+  <param>
+    <name>TX Time key</name>
+    <key>tx_time_key</key>
+    <value>"tx_time"</value>
+    <type>string</type>
+  </param>
+  <param>
+    <name>PTT Mode</name>
+    <key>ptt_mode</key>
+    <value>"TX"</value>
+    <type>string</type>
+  </param>
+  <sink>
+    <name>in</name>
+    <type>complex</type>
+  </sink>
+  <source>
+    <name>ptt</name>
+    <type>message</type>
+    <optional>1</optional>
+  </source>
+</block>

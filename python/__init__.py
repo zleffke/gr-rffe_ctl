@@ -34,6 +34,7 @@ except ImportError:
 from simple_ptt import simple_ptt
 
 from time_tag_to_pdu import time_tag_to_pdu
+from tag_ptt_pdu import tag_ptt_pdu
 
 
 

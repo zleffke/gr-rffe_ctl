@@ -19,5 +19,6 @@
 # Boston, MA 02110-1301, USA.
 install(FILES
     rffe_ctl_simple_ptt.xml
-    rffe_ctl_time_tag_to_pdu.xml DESTINATION share/gnuradio/grc/blocks
+    rffe_ctl_time_tag_to_pdu.xml
+    rffe_ctl_tag_ptt_pdu.xml DESTINATION share/gnuradio/grc/blocks
 )
